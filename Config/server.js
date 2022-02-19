@@ -16,6 +16,19 @@ function start(port) {
         else
           await res.status(404).send(response.auth.invalid)
     })
+    app.post('/users', async function (req,res) {
+        await res.status(200).send(response.user.create)
+    })
+    app.get('/users', async function (req,res) {
+        const id = req.query.id
+        if (id)
+            await res.status(200).send({id: id, amount: 1000})
+        else
+            await res.status(200).send(response.user.getAll)
+    })
+    app.delete('./users',async function (req,res) {
+        await res.status(200).send(response.user.delete)
+    })
     app.delete('./config',async function (req,res) {
         await res.status(200).send({'message':"Data wiped out."})
     })

@@ -1,0 +1,8 @@
+{
+  "auth": {
+    "valid": {
+      "token": "329d5773-193c-41e7-8bc4-3a7bc8712ba8"
+    },
+    "invalid": "Wrong login or password."
+  }
+}

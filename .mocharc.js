@@ -1,5 +1,6 @@
 module.exports = {
     require: '@babel/register',
-    spec: 'specs/**/*.specs.js',
+    spec: 'specs/**/auth.specs.js',
     file: 'config/setup.js',
+    timeout:15000
 }

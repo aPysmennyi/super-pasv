@@ -1,5 +1,4 @@
 import UsersHelper from "../helpers/users.helpers";
-import ConfigHelper from "../helpers/config.helpers";
 import { getRandomItem } from "../helpers/common.helpers";
 import { expect } from 'chai'
 
@@ -11,11 +10,6 @@ describe('Users', function () {
             await userHelper.create()
             userId = userHelper.response.body.id
         })
-
-    after(async function (){
-        const configHelper = new ConfigHelper()
-        await configHelper.wipeData()
-    })
     describe('User creation', function () {
         it('Response status code is 200', function () {
             expect(userHelper.response.statusCode).to.eq(200)

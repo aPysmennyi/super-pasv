@@ -5,25 +5,25 @@
     },
     "invalid": {
       "message": "Wrong login or password."
-  }
-},
-"users": {
-"create": {
-"id": "d3abf70f-3cba-4a3e-90e6-7cff26e4c7e2",
+    }
+  },
+  "users": {
+    "create": {
+      "id": "d3abf70f-3cba-4a3e-90e6-7cff26e4c7e2",
+      "amount": 1000
+    },
+    "getAll": [
+      {
+        "id": "d3abf70f-3cba-4a3e-90e6-7cff26e4c7e2",
         "amount": 1000
-},
-"getAll": [
-{
-"id": "d3abf70f-3cba-4a3e-90e6-7cff26e4c7e2",
-"amount": 1000
-},
-{
-"id": "d3abf70f-3cba-4a3e-90e6-7cff26e4c7e3",
-"amount": 1000
-}
-],
-"delete": {
-"message": "User deleted."
-}
-}
+      },
+      {
+        "id": "d3abf70f-3cba-4a3e-90e6-7cff26e4c7e3",
+        "amount": 1000
+      }
+    ],
+    "delete": {
+      "message": "User deleted."
+    }
+  }
 }

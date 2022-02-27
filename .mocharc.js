@@ -1,6 +1,7 @@
 module.exports = {
     require: '@babel/register',
     spec: 'specs/**/*.specs.js',
-    file: 'node_modules/mocha/lib/*',
-    timeout:15000
+    ignore: 'specs/example.specs.js',
+    file: 'config/setup.js',
+    timeout: 15000
 }
